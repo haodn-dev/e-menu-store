@@ -1,0 +1,143 @@
+.right-content-container {
+    height: 100%;
+    padding-top: 28px;
+    padding-right: 28px;
+
+    .right-content {
+        border-radius: 15px 15px 0 0;
+        background-color: $neutral_800;
+        padding: 0 20px;
+        height: 100%;
+
+        .header {
+            .search-bar {
+                position: relative;
+
+                .search-icon {
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    top: 50%;
+                    left: 10px;
+                    z-index: 10;
+
+                }
+
+                .search-input {
+                    position: relative;
+                    background-color: transparent;
+                    color: $neutral_200;
+                    border: 1px solid $neutral_600;
+                    border-radius: 10px;
+                    padding: 10px 20px;
+                    width: 100%;
+                    margin-bottom: 20px;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+
+}
+
+.btn-custom {
+    background: transparent;
+    border: 1px solid $neutral_600;
+    border-radius: 14.4px;
+    padding: 10px;
+
+    &:hover {
+        background: $neutral_400;
+    }
+
+    &.active {
+        background: $red;
+        color: $white;
+        border-color: $red;
+    }
+
+    &.disabled {
+        background: $neutral_600;
+        border-color: $neutral_600;
+    }
+
+    &.red-btn {
+        background: $red;
+        color: $white;
+        border-color: $red;
+    }
+}
+
+.btn-icon {
+    margin: 0 10px;
+    color: $white;
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+#tableSelection {
+    .table-modal-select {
+        .modal-content {
+            height: auto;
+
+            .modal-body {
+                background: $neutral_1000;
+
+                .table-slider {
+                    height: 100%;
+
+                    --swiper-pagination-color: #4C4D4E;
+                    --swiper-pagination-bullet-width: 20px;
+                    --swiper-pagination-bullet-height: 20px;
+                    --swiper-pagination-bullet-inactive-color: #5f686a;
+
+                    .list-table {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+                        gap: 10px;
+
+                        .table-item {
+                            max-width: 90px;
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                        }
+                    }
+                }
+
+
+            }
+
+            .table-status {
+                text-align: center;
+                padding: 10px 0;
+
+                .table-status-wrapper {
+                    display: inline-flex;
+                    align-items: center;
+                }
+
+            }
+        }
+    }
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Make the element circular */
+    margin: 10px; /* Adjust margin as needed */
+    background: $white;
+
+    &.empty {
+        background-color: transparent; /* Example background color */
+        border: 1px solid $neutral_600;
+    }
+
+    &.filled {
+        background-color: $neutral_600;
+    }
+}

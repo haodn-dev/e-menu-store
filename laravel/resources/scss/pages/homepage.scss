@@ -1,0 +1,58 @@
+.banner-slider {
+    --swiper-pagination-color: #cfd5d8;
+    --swiper-pagination-bullet-width: 15px;
+    --swiper-pagination-bullet-height: 15px;
+    --swiper-pagination-bullet-inactive-color: #8d99a3;
+
+    .swiper {
+        .swiper-pagination {
+            .swiper-pagination-bullet-active {
+                background: $neutral_200
+            }
+        }
+    }
+
+    swiper-slide {
+        > img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 15px;
+            border: 1px solid transparent;
+        }
+
+    }
+}
+
+.list-food-container {
+    margin-top: 50px;
+
+    .card {
+        background: $neutral_1000;
+        color: $white;
+
+
+        .card-img-wrapper {
+            padding: 20px;
+
+            .card-img-top {
+                border-radius: 6px;
+                border: 1px solid transparent;
+            }
+        }
+
+        .card-body {
+            padding: 5px 20px;
+
+            .card-title {
+                margin-bottom: unset;
+            }
+        }
+
+        .card-footer {
+            color: $white;
+            align-items: baseline;
+        }
+    }
+}

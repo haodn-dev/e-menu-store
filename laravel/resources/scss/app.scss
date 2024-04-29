@@ -1,0 +1,10 @@
+@import "components/_variables";
+@import "components/sidebar";
+@import "components/right-content";
+@import "pages/homepage";
+
+body {
+    height: 100vh;
+    background-color: $blackMainBackground;
+    color: $white;
+}

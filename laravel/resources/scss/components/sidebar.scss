@@ -1,0 +1,29 @@
+.sidebar {
+    height: 100%;
+
+    .categories {
+        margin-top: 50px;
+
+        .nav-item {
+            padding: 10px 0;
+
+            .nav-link {
+                color: $grey;
+                font-size: 1.2em;
+                background-color: transparent;
+                border-radius: 15px;
+
+                &.active, &:hover {
+                    background: $grey2 !important;
+                    color: $white;
+                }
+
+                .category-icon {
+                    max-width: 1.75vw;
+                    margin-right: 5px;
+                    filter: brightness(120%);
+                }
+            }
+        }
+    }
+}

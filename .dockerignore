@@ -1,0 +1,4 @@
+/laravel/vendor
+/laravel/node_modules
+/node_modules
+.idea
